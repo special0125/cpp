@@ -68,7 +68,7 @@ int main() {
     // 포인트 정보의 최솟값, 최대값 정보 담기
     int minIntensity = std::numeric_limits<int>::max();
     int maxIntensity = std::numeric_limits<int>::lowest();
-   /* int minReturnNumber = std::numeric_limits<int>::max();
+    int minReturnNumber = std::numeric_limits<int>::max();
     int maxReturnNumber = std::numeric_limits<int>::lowest();
     int minNumberOfReturns = std::numeric_limits<int>::max();
     int maxNumberOfReturns = std::numeric_limits<int>::lowest();
@@ -83,22 +83,22 @@ int main() {
     int minPointSourceID = std::numeric_limits<int>::max();
     int maxPointSourceID = std::numeric_limits<int>::lowest();
     double minGpsTime = std::numeric_limits<double>::max();
-    double maxGpsTime = std::numeric_limits<double>::lowest();*/
+    double maxGpsTime = std::numeric_limits<double>::lowest();
     while (reader.ReadNextPoint()) {
         liblas::Point const& p = reader.GetPoint();
         int intensity = p.GetIntensity();
-       /* int returnNumber = p.GetReturnNumber();
+        int returnNumber = p.GetReturnNumber();
         int numberOfReturns = p.GetNumberOfReturns();
         int edgeOfFlightLine = p.GetFlightLineEdge();
         int scanDirectionFlag = p.GetScanFlags();
         int scanAngleRank = p.GetScanAngleRank();
         int userData = p.GetUserData();
         int pointSourceID = p.GetPointSourceID();
-        double gpsTime = p.GetTime();*/
+        double gpsTime = p.GetTime();
 
         minIntensity = std::min(minIntensity, intensity);
         maxIntensity = std::max(maxIntensity, intensity);
-       /* minReturnNumber = std::min(minReturnNumber, returnNumber);
+        minReturnNumber = std::min(minReturnNumber, returnNumber);
         maxReturnNumber = std::max(maxReturnNumber, returnNumber);
         minNumberOfReturns = std::min(minNumberOfReturns, numberOfReturns);
         maxNumberOfReturns = std::max(maxNumberOfReturns, numberOfReturns);
@@ -113,7 +113,7 @@ int main() {
         minPointSourceID = std::min(minPointSourceID, pointSourceID);
         maxPointSourceID = std::max(maxPointSourceID, pointSourceID);
         minGpsTime = std::min(minGpsTime, gpsTime);
-        maxGpsTime = std::max(maxGpsTime, gpsTime);*/
+        maxGpsTime = std::max(maxGpsTime, gpsTime);
 
     }
     // 최솟값과 최댓값 출력
