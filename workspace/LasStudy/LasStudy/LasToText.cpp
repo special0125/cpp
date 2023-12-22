@@ -3,7 +3,6 @@
 #include <iostream>
 #include <limits>
 
-
 int main() {
     // 변수 선언
     int i = 1;
@@ -84,6 +83,7 @@ int main() {
     int maxPointSourceID = std::numeric_limits<int>::lowest();
     double minGpsTime = std::numeric_limits<double>::max();
     double maxGpsTime = std::numeric_limits<double>::lowest();
+
     while (reader.ReadNextPoint()) {
         liblas::Point const& p = reader.GetPoint();
         int intensity = p.GetIntensity();
