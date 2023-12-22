@@ -7,8 +7,8 @@
 int main() {
     // 변수 선언
     int i = 1;
-    std::string lasfile = "C:/las/ChunAn_Error_1.las";   // .las 파일 위치
-    std::string txtfile = "C:/las/ChunAn_Error_1.txt";   // 생성할 text 파일
+    std::string lasfile = "C:/Users/516/Desktop/윤기태/cppStudy/ChunAn_Error_1.las";   // .las 파일 위치
+    std::string txtfile = "C:/Users/516/Desktop/윤기태/cppStudy/ChunAn_Error_1.txt";   // 생성할 text 파일
 
     // 입출력 스트림 생성
     std::ifstream ifs(lasfile, std::ios::in | std::ios::binary);    // 읽기 모드, 바이너리파일로 열기(이진 파일)
