@@ -118,14 +118,14 @@ int main() {
     }
     // 최솟값과 최댓값 출력
     ofs << "Intensity: " << minIntensity << "\t" << maxIntensity << std::endl;
-    /*ofs << "Return Number: " << minReturnNumber << "\t" << maxReturnNumber << std::endl;
+    ofs << "Return Number: " << minReturnNumber << "\t" << maxReturnNumber << std::endl;
     ofs << "Number Of Returns: " << minNumberOfReturns << "\t" << maxNumberOfReturns << std::endl;
     ofs << "Edge Of Flight Line: " << minEdgeOfFlightLine << "\t" << maxEdgeOfFlightLine << std::endl;
     ofs << "Scan Direction Flag: " << minScanDirectionFlag << "\t" << maxScanDirectionFlag << std::endl;
     ofs << "Scan Angle Rank: " << minScanAngleRank << "\t" << maxScanAngleRank << std::endl;
     ofs << "User Data: " << minUserData << "\t" << maxUserData << std::endl;
     ofs << "Point Source ID: " << minPointSourceID << "\t" << maxPointSourceID << std::endl;
-    ofs << "GPS Time: " << minGpsTime << "\t" << maxGpsTime << std::endl;*/
+    ofs << "GPS Time: " << minGpsTime << "\t" << maxGpsTime << std::endl;
 
     std::cout << "LAS to TXT conversion completed successfully." << std::endl;
     ifs.close();
